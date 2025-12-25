@@ -1,11 +1,387 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Abhinav Santhosh</title>
-  </head>
-  <body>
-    <h1>Hi, I’m Abhinav 👋</h1>
-    <p>UT Dallas CS • Backend/Full-stack • Java/Spring Boot/React</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhinav Santhosh — Software Developer</title>
+  <meta name="description" content="Software Developer focused on backend systems, microservices, and scalable platforms. Java/Spring Boot, React, AWS, Kafka, GraphQL." />
+
+  <!-- Open Graph (optional but nice) -->
+  <meta property="og:title" content="Abhinav Santhosh — Portfolio" />
+  <meta property="og:description" content="Software Developer • Java/Spring Boot • AWS • Kafka • GraphQL" />
+  <meta property="og:type" content="website" />
+  <!-- If you add assets/og.png, uncomment: -->
+  <meta property="og:image" content="assets/Abhinav.jpg" />
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Abhinav Santhosh</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button class="iconbtn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="iconbtn__sun" aria-hidden="true">☀</span>
+          <span class="iconbtn__moon" aria-hidden="true">☾</span>
+        </button>
+
+        <button class="iconbtn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileNav" hidden>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="pill">Software Developer • Backend & Platform</div>
+          <h1>
+            Building reliable systems with
+            <span class="grad">microservices</span>,
+            <span class="grad">event-driven</span> workflows,
+            and <span class="grad">clean APIs</span>.
+          </h1>
+
+          <p class="lead">
+            I’m Abhinav — a Software Developer experienced with Java/Spring Boot, AWS, Kafka, GraphQL, and React.
+            I focus on building scalable backend platforms, automation pipelines, and developer-friendly workflows.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero__meta">
+            <a class="meta" href="mailto:abhinavofficial232001@gmail.com">abhinavofficial232001@gmail.com</a>
+            <span class="dot">•</span>
+            <a class="meta" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="dot">•</span>
+            <a class="meta" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Highlights">
+          <div class="card">
+            <h2 class="card__title">Highlights</h2>
+            <ul class="bullets">
+              <li><strong>$4k/month</strong> cost reduction by replacing SMS with push notifications</li>
+              <li><strong>20×</strong> faster form development via universal JSON→React form platform</li>
+              <li><strong>100k rows</strong> processed in ~<strong>10s</strong> using Spring Batch</li>
+              <li><strong>40%</strong> query performance improvement via denormalization</li>
+            </ul>
+
+            <div class="card__footer">
+              <a class="btn btn--small" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+              <a class="btn btn--small btn--ghost" href="#experience">See Experience</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p>Backend-focused developer with experience across product engineering, platform APIs, and automation.</p>
+        </div>
+
+        <div class="about">
+          <div class="card">
+            <h3>What I do</h3>
+            <p>
+              I build backend systems that are secure, observable, and easy to integrate — from
+              REST/GraphQL APIs and real-time WebSockets, to Kafka-based event pipelines and AWS automation.
+            </p>
+
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">AWS</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">React</span>
+              <span class="chip">Docker/K8s</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Education</h3>
+            <div class="edu">
+              <div class="edu__row">
+                <div>
+                  <div class="edu__title">The University of Texas at Dallas</div>
+                  <div class="muted">M.S. Computer Science • GPA 3.94/4.00</div>
+                </div>
+                <div class="muted">2025 • Richardson, TX</div>
+              </div>
+
+              <div class="edu__row">
+                <div>
+                  <div class="edu__title">National Institute of Technology Calicut</div>
+                  <div class="muted">B.Tech Mechanical Engineering • GPA 3.90/4.00</div>
+                </div>
+                <div class="muted">2022 • India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p>Impact-focused work across automation, platform APIs, and scalable backend systems.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="card timeline__item">
+            <div class="timeline__top">
+              <h3>Software Developer — Center for BrainHealth</h3>
+              <span class="tag">Aug 2025 – Present</span>
+            </div>
+            <ul class="bullets">
+              <li>Automated weekly Zoom recording processing using <strong>AWS Lambda</strong> + <strong>Amazon EventBridge</strong>, moving files across <strong>S3</strong> and organizing them into a scalable folder structure.</li>
+              <li>Replaced SMS nudges with app <strong>push notifications</strong> integrated with <strong>Contentful</strong>, improving engagement and reducing costs by <strong>$4,000/month</strong>.</li>
+            </ul>
+          </article>
+
+          <article class="card timeline__item">
+            <div class="timeline__top">
+              <h3>Software Developer Intern — Paycom</h3>
+              <span class="tag">May 2025 – Aug 2025</span>
+            </div>
+            <ul class="bullets">
+              <li>Led a universal form-rendering platform converting <strong>JSON</strong> configs into reusable <strong>React</strong> forms, reducing development time by <strong>20×</strong>.</li>
+              <li>Designed a rule engine to serve form versions + validations based on user inputs (e.g., country/state), minimizing duplication.</li>
+              <li>Built an <strong>SSO-secured</strong> admin dashboard enabling non-technical workflow configuration, reducing manual setup by <strong>60%</strong>.</li>
+            </ul>
+          </article>
+
+          <article class="card timeline__item">
+            <div class="timeline__top">
+              <h3>Software Developer Intern — Center for BrainHealth</h3>
+              <span class="tag">Jan 2025 – May 2025</span>
+            </div>
+            <ul class="bullets">
+              <li>Implemented <strong>WebSocket</strong> real-time score delivery to external users as soon as results were available.</li>
+              <li>Built secure external APIs using <strong>GraphQL</strong> + <strong>REST</strong>, enabling efficient queries/mutations while minimizing over-fetching.</li>
+            </ul>
+          </article>
+
+          <article class="card timeline__item">
+            <div class="timeline__top">
+              <h3>Software Developer — Shiprocket Omuni Limited</h3>
+              <span class="tag">Dec 2022 – Dec 2023</span>
+            </div>
+            <ul class="bullets">
+              <li>Maintained a large-scale e-commerce platform handling thousands of orders/day with end-to-end fulfillment workflows.</li>
+              <li>Developed REST APIs for asynchronous uploads using <strong>Spring Batch</strong> to process <strong>100k rows</strong> in ~<strong>10s</strong>.</li>
+              <li>Improved query performance by <strong>40%</strong> by denormalizing two SQL tables into one, reducing expensive joins.</li>
+              <li>Upgraded a legacy microservice to <strong>Spring Boot 2.7</strong>, refactoring APIs, indexing DB, and adding <strong>500+</strong> JUnit5 tests; reduced response time by ~<strong>10%</strong>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p>Selected work that demonstrates system design, scalability, and clean integration.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card project">
+            <div class="project__top">
+              <h3>Social Media Backend Platform</h3>
+              <span class="tag">June 2025</span>
+            </div>
+            <p class="muted">
+              Microservices-based backend supporting authentication, post creation, and feed retrieval via REST + gRPC.
+            </p>
+            <ul class="bullets">
+              <li>Kafka event-driven workflows for feed updates, notifications, and activity logging.</li>
+              <li>JWT auth with centralized authorization at the API Gateway level.</li>
+              <li>Designed for decoupling and scale-out service growth.</li>
+            </ul>
+            <div class="project__chips">
+              <span class="chip">Spring Boot</span>
+              <span class="chip">JWT</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">gRPC</span>
+              <span class="chip">Docker</span>
+            </div>
+
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn--small" href="#contact">Request Demo</a>
+            </div>
+          </article>
+
+          <!-- You can duplicate this card for more projects -->
+          <article class="card project project--empty">
+            <div class="project__top">
+              <h3>Next Project</h3>
+              <span class="tag">Coming soon</span>
+            </div>
+            <p class="muted">
+              Add 1–2 more projects here (e.g., WebSocket scoring system, AWS automation pipeline, or a personal app).
+            </p>
+            <ul class="bullets">
+              <li>What problem it solves</li>
+              <li>Tech decisions & scale considerations</li>
+              <li>Measurable outcome</li>
+            </ul>
+            <div class="project__chips">
+              <span class="chip">API</span>
+              <span class="chip">Systems</span>
+              <span class="chip">Performance</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p>Technologies I’ve used in production and projects.</p>
+        </div>
+
+        <div class="skills">
+          <div class="card">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">C#</span>
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Backend</h3>
+            <div class="chips">
+              <span class="chip">Spring Boot</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">REST</span>
+              <span class="chip">WebSockets</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">Microservices</span>
+              <span class="chip">Hibernate</span>
+              <span class="chip">JUnit</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Data & Infra</h3>
+            <div class="chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">Jenkins</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Want to collaborate or discuss roles? Reach out.</p>
+        </div>
+
+        <div class="contact">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p class="muted">Fastest way: email. I usually respond quickly.</p>
+
+            <div class="contact__links">
+              <a class="btn" href="mailto:abhinavofficial232001@gmail.com">Email me</a>
+              <a class="btn btn--ghost" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
+            </div>
+
+            <div class="small muted">
+              Or download my resume: <a href="assets/resume.pdf" target="_blank" rel="noopener">assets/resume.pdf</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick summary</h3>
+            <ul class="bullets">
+              <li>Backend/platform engineering (Spring Boot, APIs, microservices)</li>
+              <li>Event-driven systems (Kafka), automation (AWS Lambda/EventBridge)</li>
+              <li>Real-time communication (WebSockets), efficient APIs (GraphQL)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted">© <span id="year"></span> Abhinav Santhosh</span>
+        <a class="muted" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
