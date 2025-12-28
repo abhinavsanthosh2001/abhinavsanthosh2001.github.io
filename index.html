@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Abhinav Santhosh — Software Developer</title>
-  <meta name="description" content="Software Developer focused on backend systems, microservices, and scalable platforms. Java/Spring Boot, React, AWS, Kafka, GraphQL." />
+  <meta name="description"
+    content="Software Developer focused on backend systems, microservices, and scalable platforms. Java/Spring Boot, React, AWS, Kafka, GraphQL." />
 
   <!-- Open Graph (optional but nice) -->
   <meta property="og:title" content="Abhinav Santhosh — Portfolio" />
@@ -12,7 +14,7 @@
   <meta property="og:type" content="website" />
   <!-- If you add assets/og.png, uncomment: -->
   <meta property="og:image" content="assets/Abhinav.jpg" />
- 
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +90,8 @@
           <div class="hero__meta">
             <a class="meta" href="mailto:abhinavofficial232001@gmail.com">abhinavofficial232001@gmail.com</a>
             <span class="dot">•</span>
-            <a class="meta" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="meta" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank"
+              rel="noopener">LinkedIn</a>
             <span class="dot">•</span>
             <a class="meta" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -226,138 +229,171 @@
     </section> -->
 
     <!-- TIMELINE -->
-<section class="section" id="timeline">
-  <div class="container">
-    <div class="section__head">
-      <h2>Timeline</h2>
-      <p>Education and experience side-by-side.</p>
-    </div>
 
-    <div class="split-timeline">
-      <!-- LEFT: EDUCATION -->
-      <div class="split-timeline__col">
-        <div class="split-timeline__title">
-          <h3>Education</h3>
-          <span class="tag">Academics</span>
+    <!-- TIMELINE (Shared years) -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section__head">
+          <h2>Timeline</h2>
+          <p>Education and experience aligned on the same year scale.</p>
         </div>
 
-        <div class="vline">
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">M.S. Computer Science</div>
-                  <div class="muted">The University of Texas at Dallas • GPA 3.94/4.00</div>
-                </div>
-                <div class="tag">Dec 2025</div>
-              </div>
-              <ul class="bullets">
-                <li>Richardson, TX</li>
-              </ul>
+        <div class="year-timeline">
+          <!-- Year rail -->
+          <div class="year-rail" aria-hidden="true">
+            <div class="year-node">
+              <div class="year-dot"></div>
+              <div class="year-label">2022</div>
             </div>
-          </article>
 
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">B.Tech Mechanical Engineering</div>
+            <div class="year-node">
+              <div class="year-dot"></div>
+              <div class="year-label">2023</div>
+            </div>
+
+            <div class="year-node">
+              <div class="year-dot"></div>
+              <div class="year-label">2024</div>
+            </div>
+
+            <div class="year-node">
+              <div class="year-dot"></div>
+              <div class="year-label">2025</div>
+            </div>
+
+            <div class="year-node year-node--last">
+              <div class="year-dot year-dot--pulse"></div>
+              <div class="year-label">Present</div>
+            </div>
+          </div>
+
+          <!-- Two lanes aligned to same rail -->
+          <div class="lanes">
+            <div class="lanes__head">
+              <div class="lanes__coltitle">Education</div>
+              <div class="lanes__coltitle">Experience</div>
+            </div>
+
+            <!-- ===== 2022 ===== -->
+            <div class="year-row">
+              <div class="lane lane--edu">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">B.Tech, Mechanical Engineering</div>
+                    <div class="tag">Dec 2022</div>
+                  </div>
                   <div class="muted">National Institute of Technology Calicut • GPA 3.90/4.00</div>
-                </div>
-                <div class="tag">Dec 2022</div>
+                </article>
               </div>
-              <ul class="bullets">
-                <li>India</li>
-              </ul>
+
+              <div class="lane lane--exp">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">Software Developer — Shiprocket Omuni</div>
+                    <div class="tag">Dec 2022</div>
+                  </div>
+                  <div class="muted">Spring Boot • MySQL • Microservices</div>
+                  <ul class="bullets">
+                    <li>Built async upload workflows using Spring Batch (100k rows in ~10s).</li>
+                  </ul>
+                </article>
+              </div>
             </div>
-          </article>
+
+            <!-- ===== 2023 ===== -->
+            <div class="year-row">
+              <div class="lane lane--edu">
+                <!-- (optional) keep empty to show nothing that year -->
+                <div class="lane-empty muted">—</div>
+              </div>
+
+              <div class="lane lane--exp">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">Software Developer — Shiprocket Omuni</div>
+                    <div class="tag">2023</div>
+                  </div>
+                  <ul class="bullets">
+                    <li>Improved query performance by 40% via denormalization.</li>
+                    <li>Upgraded microservice to Spring Boot 2.7 + added 500+ tests.</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <!-- ===== 2024 ===== -->
+            <div class="year-row">
+              <div class="lane lane--edu">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">M.S. Computer Science</div>
+                    <div class="tag">2024</div>
+                  </div>
+                  <div class="muted">The University of Texas at Dallas</div>
+                  <ul class="bullets">
+                    <li>Graduate coursework focused on systems and software engineering.</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="lane lane--exp">
+                <div class="lane-empty muted">—</div>
+              </div>
+            </div>
+
+            <!-- ===== 2025 ===== -->
+            <div class="year-row">
+              <div class="lane lane--edu">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">M.S. Computer Science</div>
+                    <div class="tag">Dec 2025</div>
+                  </div>
+                  <div class="muted">UT Dallas • GPA 3.94/4.00</div>
+                </article>
+              </div>
+
+              <div class="lane lane--exp">
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">Software Developer Intern — Center for BrainHealth</div>
+                    <div class="tag">Jan–May 2025</div>
+                  </div>
+                  <ul class="bullets">
+                    <li>WebSocket real-time score delivery + GraphQL/REST APIs.</li>
+                  </ul>
+                </article>
+
+                <div class="lane-spacer"></div>
+
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">Software Developer Intern — Paycom</div>
+                    <div class="tag">May–Aug 2025</div>
+                  </div>
+                  <ul class="bullets">
+                    <li>Universal JSON → React forms platform (20× faster dev).</li>
+                  </ul>
+                </article>
+
+                <div class="lane-spacer"></div>
+
+                <article class="lane-card card">
+                  <div class="lane-card__top">
+                    <div class="lane-card__title">Software Developer — Center for BrainHealth</div>
+                    <div class="tag">Aug 2025–Present</div>
+                  </div>
+                  <ul class="bullets">
+                    <li>AWS Lambda/EventBridge automation + push notification cost reduction.</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <!-- RIGHT: EXPERIENCE -->
-      <div class="split-timeline__col">
-        <div class="split-timeline__title">
-          <h3>Experience</h3>
-          <span class="tag">Industry</span>
-        </div>
-
-        <div class="vline">
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">Software Developer — Center for BrainHealth</div>
-                  <div class="muted">AWS Lambda • EventBridge • S3 • Contentful</div>
-                </div>
-                <div class="tag">Aug 2025 – Present</div>
-              </div>
-              <ul class="bullets">
-                <li>Automated weekly Zoom recording processing using AWS Lambda + EventBridge; organized assets in S3 with a scalable structure.</li>
-                <li>Replaced SMS nudges with push notifications integrated with Contentful; reduced costs by <strong>$4,000/month</strong>.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">Software Developer Intern — Paycom</div>
-                  <div class="muted">React • Platform tooling • Config-driven UX</div>
-                </div>
-                <div class="tag">May 2025 – Aug 2025</div>
-              </div>
-              <ul class="bullets">
-                <li>Led a universal JSON → React form-rendering platform, cutting development time by <strong>20×</strong>.</li>
-                <li>Built a rule engine to serve dynamic form versions/validations based on user inputs (e.g., country/state).</li>
-                <li>Developed an SSO-secured admin dashboard enabling non-technical workflow configuration, reducing manual setup by <strong>60%</strong>.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">Software Developer Intern — Center for BrainHealth</div>
-                  <div class="muted">WebSockets • GraphQL • Secure external APIs</div>
-                </div>
-                <div class="tag">Jan 2025 – May 2025</div>
-              </div>
-              <ul class="bullets">
-                <li>Implemented WebSocket-based real-time score delivery to external users.</li>
-                <li>Built secure external APIs using GraphQL + REST to reduce over-fetching and simplify integrations.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="tcard">
-            <div class="tcard__dot" aria-hidden="true"></div>
-            <div class="tcard__body card">
-              <div class="tcard__top">
-                <div>
-                  <div class="tcard__role">Software Developer — Shiprocket Omuni Limited</div>
-                  <div class="muted">Spring Boot • Spring Batch • MySQL • JUnit</div>
-                </div>
-                <div class="tag">Dec 2022 – Dec 2023</div>
-              </div>
-              <ul class="bullets">
-                <li>Built async upload workflows using Spring Batch to process <strong>100k rows</strong> in ~<strong>10s</strong>.</li>
-                <li>Improved query performance by <strong>40%</strong> by denormalizing two SQL tables into one.</li>
-                <li>Upgraded a microservice to Spring Boot 2.7 and added 500+ tests; reduced response time ~10%.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!-- PROJECTS -->
@@ -392,7 +428,8 @@
             </div>
 
             <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn--small btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank"
+                rel="noopener">GitHub</a>
               <a class="btn btn--small" href="#contact">Request Demo</a>
             </div>
           </article>
@@ -488,8 +525,10 @@
 
             <div class="contact__links">
               <a class="btn" href="mailto:abhinavofficial232001@gmail.com">Email me</a>
-              <a class="btn btn--ghost" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn--ghost" href="https://linkedin.com/in/abhinav-santhosh-utd" target="_blank"
+                rel="noopener">LinkedIn</a>
+              <a class="btn btn--ghost" href="https://github.com/abhinavsanthosh2001" target="_blank"
+                rel="noopener">GitHub</a>
             </div>
 
             <div class="small muted">
@@ -519,4 +558,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
