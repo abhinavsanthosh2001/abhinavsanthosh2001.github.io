@@ -336,7 +336,6 @@ h1{
     grid-template-columns: 1fr;
   }
 }
-
 /* Shared-year timeline: one rail + two aligned lanes */
 .year-timeline{
   display:grid;
