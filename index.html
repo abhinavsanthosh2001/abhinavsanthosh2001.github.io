@@ -33,7 +33,7 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#timeline">Timeline</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -167,7 +167,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
+    <!-- <section class="section" id="experience">
       <div class="container">
         <div class="section__head">
           <h2>Experience</h2>
@@ -223,7 +223,142 @@
           </article>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- TIMELINE -->
+<section class="section" id="timeline">
+  <div class="container">
+    <div class="section__head">
+      <h2>Timeline</h2>
+      <p>Education and experience side-by-side.</p>
+    </div>
+
+    <div class="split-timeline">
+      <!-- LEFT: EDUCATION -->
+      <div class="split-timeline__col">
+        <div class="split-timeline__title">
+          <h3>Education</h3>
+          <span class="tag">Academics</span>
+        </div>
+
+        <div class="vline">
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">M.S. Computer Science</div>
+                  <div class="muted">The University of Texas at Dallas • GPA 3.94/4.00</div>
+                </div>
+                <div class="tag">Dec 2025</div>
+              </div>
+              <ul class="bullets">
+                <li>Richardson, TX</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">B.Tech Mechanical Engineering</div>
+                  <div class="muted">National Institute of Technology Calicut • GPA 3.90/4.00</div>
+                </div>
+                <div class="tag">Dec 2022</div>
+              </div>
+              <ul class="bullets">
+                <li>India</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- RIGHT: EXPERIENCE -->
+      <div class="split-timeline__col">
+        <div class="split-timeline__title">
+          <h3>Experience</h3>
+          <span class="tag">Industry</span>
+        </div>
+
+        <div class="vline">
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">Software Developer — Center for BrainHealth</div>
+                  <div class="muted">AWS Lambda • EventBridge • S3 • Contentful</div>
+                </div>
+                <div class="tag">Aug 2025 – Present</div>
+              </div>
+              <ul class="bullets">
+                <li>Automated weekly Zoom recording processing using AWS Lambda + EventBridge; organized assets in S3 with a scalable structure.</li>
+                <li>Replaced SMS nudges with push notifications integrated with Contentful; reduced costs by <strong>$4,000/month</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">Software Developer Intern — Paycom</div>
+                  <div class="muted">React • Platform tooling • Config-driven UX</div>
+                </div>
+                <div class="tag">May 2025 – Aug 2025</div>
+              </div>
+              <ul class="bullets">
+                <li>Led a universal JSON → React form-rendering platform, cutting development time by <strong>20×</strong>.</li>
+                <li>Built a rule engine to serve dynamic form versions/validations based on user inputs (e.g., country/state).</li>
+                <li>Developed an SSO-secured admin dashboard enabling non-technical workflow configuration, reducing manual setup by <strong>60%</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">Software Developer Intern — Center for BrainHealth</div>
+                  <div class="muted">WebSockets • GraphQL • Secure external APIs</div>
+                </div>
+                <div class="tag">Jan 2025 – May 2025</div>
+              </div>
+              <ul class="bullets">
+                <li>Implemented WebSocket-based real-time score delivery to external users.</li>
+                <li>Built secure external APIs using GraphQL + REST to reduce over-fetching and simplify integrations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard">
+            <div class="tcard__dot" aria-hidden="true"></div>
+            <div class="tcard__body card">
+              <div class="tcard__top">
+                <div>
+                  <div class="tcard__role">Software Developer — Shiprocket Omuni Limited</div>
+                  <div class="muted">Spring Boot • Spring Batch • MySQL • JUnit</div>
+                </div>
+                <div class="tag">Dec 2022 – Dec 2023</div>
+              </div>
+              <ul class="bullets">
+                <li>Built async upload workflows using Spring Batch to process <strong>100k rows</strong> in ~<strong>10s</strong>.</li>
+                <li>Improved query performance by <strong>40%</strong> by denormalizing two SQL tables into one.</li>
+                <li>Upgraded a microservice to Spring Boot 2.7 and added 500+ tests; reduced response time ~10%.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- PROJECTS -->
     <section class="section" id="projects">

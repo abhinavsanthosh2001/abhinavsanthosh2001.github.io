@@ -266,3 +266,73 @@ h1{
   .nav__burger{ display:inline-flex; }
   .mobile{ display:block; }
 }
+
+
+/* Split timeline (Education | Experience) */
+.split-timeline{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 18px;
+  align-items:start;
+}
+
+.split-timeline__title{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.vline{
+  position: relative;
+  padding-left: 18px;
+}
+
+.vline::before{
+  content:"";
+  position:absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(124,58,237,.55), rgba(56,189,248,.25), rgba(34,197,94,.35));
+  border-radius: 999px;
+  opacity: .9;
+}
+
+.tcard{
+  position: relative;
+  display:grid;
+  grid-template-columns: 18px 1fr;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+
+.tcard__dot{
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  margin-top: 14px;
+  background: linear-gradient(135deg, var(--accent1), var(--accent3));
+  box-shadow: 0 0 0 6px rgba(124,58,237,.15);
+  border: 1px solid var(--line);
+}
+
+.tcard__top{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  gap: 12px;
+}
+
+.tcard__role{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 920px){
+  .split-timeline{
+    grid-template-columns: 1fr;
+  }
+}
